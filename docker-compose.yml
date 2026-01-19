@@ -1,7 +1,9 @@
-version:"3.3"
+version: "3.3"
+
 services:
-web:
-  build :
-  context: .
-  ports: 
-    -"8000:8000"
+  web:
+    image: status-app:latest
+    build:
+      context: .
+    ports:
+      - "8000:8000"
